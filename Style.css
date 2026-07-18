@@ -10,7 +10,7 @@
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  body {
+.body {
     font-family: 'Inter', sans-serif;
     background: var(--cream);
     color: var(--charcoal);
@@ -26,47 +26,56 @@
     padding: 0 28px;
   }
 
-  /* ---------- Truck-art strip (signature element) ---------- */
-  .truck-strip {
-    height: 10px;
+  /* ---------- Navbar ---------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+.topbar{
     width: 100%;
-    background: repeating-linear-gradient(
-      90deg,
-      var(--mustard) 0 24px,
-      var(--magenta) 24px 48px,
-      var(--sea) 48px 72px
-    );
-  }
-
-  /* ---------- Top bar ---------- */
-  .topbar {
+    background: #9b1d30;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 26px 28px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
+    padding: 12px 40px;
+}
 
-  .logo {
-    font-family: 'Fraunces', serif;
-    font-weight: 900;
-    font-size: 21px;
-    letter-spacing: -0.01em;
-  }
-
-  .logo span { color: var(--magenta); }
-
-  .topbar nav {
+.navbar{
     display: flex;
-    gap: 32px;
-    font-size: 14px;
+    align-items: center;
+}
+
+/* Logo Image */
+
+.navbar-logo{
+    width: 280px;      /* Increase width */
+    height: 70px;      /* Reduce height */
+    object-fit: contain;
+}
+
+/* Navigation */
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
     font-weight: 600;
-  }
+    font-size: 16px;
+}
 
-  .topbar nav a { text-decoration: none; }
-  .topbar nav a:hover { color: var(--magenta); }
-
+nav a:hover{
+    color: #ffd54f;
+}
   @media (max-width: 640px) {
     .topbar nav { display: none; }
   }
