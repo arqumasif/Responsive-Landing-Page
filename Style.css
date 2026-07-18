@@ -1,8 +1,8 @@
 :root {
-    --primary:#9B1C31;      /* Rehmat-e-Shereen Maroon */
-    --secondary:#C62839;    /* Lighter Red */
-    --gold:#D4AF37;         /* Golden Accent */
-    --cream:#FFF8F2;        /* Background */
+    --primary:#9B1C31;      
+    --secondary:#C62839;    
+    --gold:#D4AF37;        
+    --cream:#FFF8F2;        
     --white:#FFFFFF;
     --text:#2C2C2C;
     --border:#E8D9D2;
@@ -51,11 +51,10 @@
     align-items: center;
 }
 
-/* Logo Image */
 
 .navbar-logo{
-    width: 280px;      /* Increase width */
-    height: 70px;      /* Reduce height */
+    width: 280px;      
+    height: 70px;      
     object-fit: contain;
 }
 
@@ -84,12 +83,19 @@ nav a:hover{
   .hero {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 40px 28px 100px;
+    padding: 20px 28px 100px;
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     gap: 50px;
     align-items: center;
   }
+  .hero-image{
+    width: 100%;
+    max-width: 420px;   
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
 
   .hero-eyebrow {
     font-size: 13px;
@@ -161,15 +167,6 @@ nav a:hover{
     background:var(--primary);
     color:white;
 }
-
-  /* Bakarkhani illustration - CSS/SVG */
-  .loaf-art {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-
-  .loaf-art svg { width: 100%; max-width: 320px; height: auto; }
 
   /* ---------- Legacy band ---------- */
   .legacy-section {
